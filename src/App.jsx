@@ -33,7 +33,7 @@ const App = () => {
           ? "d-flex flex-column justify-content-between h-100"
           : null
       }
-      style={{padding: "0"}}
+      style={{padding: "0", overflowX: "hidden"}}
     >
       {!showNavbar && (
         <LandingPage onTypewriterComplete={handleTypewriterComplete} />
