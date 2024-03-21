@@ -20,7 +20,7 @@ export const AboutMe = () => {
         </Col>
         <Col sm={12} xl={3} className="d-flex flex-column align-items-center animate__animated animate__bounceIn animate__delay-1s" style={{ marginTop: "10em" }}>
           <img src={me} alt="me" width={"360px"} height={"360px"} style={{ objectFit: "contain" }}className="mb-5"/>
-          <Button variant="outline-light" className="w-50 mb-5 tags rounded-pill">
+          <Button variant="outline-danger" className="w-50 mb-5 tags rounded-pill">
             <a
               href={pdf} // Percorso del tuo file PDF
               download="CV-CristinaPalmisani.pdf"
