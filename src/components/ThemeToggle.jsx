@@ -10,11 +10,12 @@ const ThemeToggle = () => {
       <div className="me-5">
         {darkMode ? (
           <div onClick={() => dispatch({ type: "ENABLE_DARK_MODE", payload: false })} style={{cursor: "pointer"}}>
-            <MoonStars className="fs-5 fw-bold" />
+            <BrightnessAltHigh className="fs-5 fw-bold" />
           </div>
         ) : (
           <div onClick={() => dispatch({ type: "ENABLE_DARK_MODE", payload: true })} style={{cursor: "pointer"}}>
-            <BrightnessAltHigh className="fs-5 fw-bold" />
+            <MoonStars className="fs-5 fw-bold" />
+            
           </div>
         )}
       </div>
