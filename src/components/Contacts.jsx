@@ -1,9 +1,12 @@
-import { faDiscord, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faDiscord,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Container, Row } from "react-bootstrap";
 
 export const Contacts = () => {
-  
   return (
     <Container
       fluid
@@ -27,13 +30,14 @@ export const Contacts = () => {
             If you want to contact me to know more about me!
           </p>
           <p className="d-flex justify-content-center mt-4 fw-bold">
-            Send me an email!</p>
-            <a
-              href="mailto:cristina.palmisani@outlook.it"
-              className="nav-link ms-4 fw-medium pb-5 text-center tags"
-            >
-              cristina.palmisani@outlook.it
-            </a>
+            Send me an email!
+          </p>
+          <a
+            href="mailto:cristina.palmisani@outlook.it"
+            className="nav-link ms-4 fw-medium pb-5 text-center tags"
+          >
+            cristina.palmisani@outlook.it
+          </a>
         </Col>
         <Col sm={12} md={5} className="mt-3">
           <Row>
@@ -41,6 +45,7 @@ export const Contacts = () => {
               <a
                 href="https://github.com/plmcst96"
                 className="nav-link d-inline"
+                target="_blank"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -48,13 +53,21 @@ export const Contacts = () => {
                   className="me-5"
                 />
               </a>
-              <a href="1116031056924127232"></a>
+
               <FontAwesomeIcon
                 icon={faDiscord}
                 style={{ color: "#be38f3", fontSize: "4em" }}
                 className="me-5"
               />
-              <FontAwesomeIcon icon={faLinkedin} style={{fontSize: "4em", color: "blue"}}/>
+              <a
+                href="https://www.linkedin.com/in/cristina-palmisani-fullstack-developer/"
+                className="nav-link d-inline" target="_blank"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  style={{ fontSize: "4em", color: "blue" }}
+                />
+              </a>
             </Col>
           </Row>
         </Col>

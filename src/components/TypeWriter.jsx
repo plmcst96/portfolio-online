@@ -37,7 +37,7 @@ const Typewriter = ({onComplete}) => {
         <div className={`typewriter-container ${hidden ? 'hidden' : ''}`}>
           <ul className="typewriter-list">
             {words.map((word, index) => (
-              <li key={index} className={index === currentIndex ? "active nav-link fw-medium ms-5" : "nav-link"} style={{fontSize: "4rem"}}>
+              <li key={index} className={index === currentIndex ? "active nav-link fw-medium" : "nav-link"} style={{fontSize: "4rem"}}>
                 {index === currentIndex ? currentWord : ""}
               </li>
             ))}

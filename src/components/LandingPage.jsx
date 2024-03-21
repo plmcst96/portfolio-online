@@ -6,7 +6,7 @@ import Typewriter from "./TypeWriter";
 export const LandingPage = ({ onTypewriterComplete }) => {
   return (
     <Container fluid style={{ padding: "0" }}>
-      <Row style={{ height: "80vh" }}>
+      <Row style={{ height: "85vh", width: "100%"}}>
         <Typewriter onComplete={onTypewriterComplete} />
       </Row>
       <Progress />
