@@ -12,7 +12,7 @@ export const Contacts = () => {
       const scrollPosition = window.scrollY;
 
       // Adjust this value as needed based on when you want the animations to start
-      const triggerPosition = 1800; // For example, trigger the animations when the user scrolls down 300px
+      const triggerPosition = 1500; // For example, trigger the animations when the user scrolls down 300px
 
       if (scrollPosition > triggerPosition && !animationStarted) {
         setAnimationStarted(true);
