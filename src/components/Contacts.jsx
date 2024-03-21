@@ -1,14 +1,39 @@
 import { faDiscord, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 export const Contacts = () => {
+  const [animationStarted, setAnimationStarted] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate the scroll position
+      const scrollPosition = window.scrollY;
+
+      // Adjust this value as needed based on when you want the animations to start
+      const triggerPosition = 1500; // For example, trigger the animations when the user scrolls down 300px
+
+      if (scrollPosition > triggerPosition && !animationStarted) {
+        setAnimationStarted(true);
+      }
+    };
+
+    // Add event listener for scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [animationStarted]);
+
   return (
     <Container
       fluid
       id="contacts"
       style={{ marginTop: "8em" }}
-      className="pb-5 "
+      className={`pb-5 ${animationStarted ? "animate__animated animate__bounceIn" : "d-none"} `}
     >
       <Row>
         <Col className="d-flex flex-column align-items-start">
